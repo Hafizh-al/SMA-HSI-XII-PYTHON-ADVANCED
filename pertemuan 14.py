@@ -7,7 +7,7 @@
 
 belanjaan = []
 belanjaan.append("Telur")
-belanjaan.append("Susu")
+belanjaan.append("Susu")  
 belanjaan.append("Roti")
 belanjaan.insert(0, "Apel")
 belanjaan.remove("Susu")
@@ -32,8 +32,8 @@ print("List terurut:", nilai_terurut)
 # 0. Gunakan len() untuk menghitung dan mencetak jumlah kata dalam kalimat.
 # 1. Gunakan .sort() pada list tersebut untuk mengurutkan kata-kata berdasarkan abjad, lalu cetak
 # list yang sudah terurut.
-
-kalimat = input("Masukin sebuah kalimat: ")
+ 
+kalimat = input("Masukin sebuah kalimat: ") 
 kata_list = kalimat.split()  
 print(f"Jumlah kata: {len(kata_list)}")
 kata_list.sort() # Urutan sesuai abjad

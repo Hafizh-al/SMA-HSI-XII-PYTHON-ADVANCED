@@ -1,0 +1,29 @@
+English: I always wake up early on Monday to prepare for the week.
+
+Indonesian: Aku selalu bangun pagi setiap Senin untuk mempersiapkan diri menghadapi minggu ini.
+# Latihan 4: Frekuensi Hari
+# Tulis program yang membaca file mbox-short.txt. Bangun histogram menggunakan dictionary untuk
+# menghitung berapa banyak pesan yang dikirim pada setiap hari dalam seminggu. (Lihat baris yang dimulai
+# dengan "From ", kata ketiganya adalah hari). Cetak dictionary hasilnya
+
+penghitung_hari = {}
+with open("mbox-short.txt") as file:
+    for baris in file:
+        if baris.startswith("From "):
+            kata = baris.split()
+            hari = kata[2]
+            penghitung_hari[hari] = penghitung_hari.get(hari, 0) + 1
+
+print(penghitung_hari)
+
+English: I always wake up early on Monday to prepare for the week.
+
+Indonesian: Aku selalu bangun pagi setiap Senin untuk mempersiapkan diri menghadapi minggu ini.
+English: We have math class every Tuesday and Thursday afternoon.
+
+Indonesian: Kami memiliki pelajaran matematika setiap Selasa dan Kamis sore.
+English: On Friday night, my family usually eats dinner together at our favorite restaurant.
+
+Indonesian: Pada Jumat malam, keluargaku biasanya makan malam bersama di restoran favorit kami
+
+From Friday until Sunday i always read story book
